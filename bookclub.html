@@ -10,17 +10,36 @@
 </head>
 
 <body>
+<h1>BOOK CLUB</h1>
 
-<header>
-<h1>Book List</h1>
-</header>
 
 
 <main>
-Search for a book:
-<br>
-<input id="title" placeholder="title"> <input id="author" placeholder="author">
-<input id="isbn" placeholder="XXXXXXXXXX or XXX-XXXXXXXXXX"> 
+
+<div id="landing">
+	<h2>Search for a book by....</h2>
+	
+	<div id="search">
+		<div id="search_container">
+			<p>Author</p>
+			<input id="title" placeholder="ex William Shakespeare"> 
+		</div>
+		<b>or</b>
+		<div id="search_container">
+			<p>Title</p>
+			<input id="author" placeholder="ex Romeo and Juliet"> 
+		</div>
+			<b>or</b>
+		<div id="search_container">
+			<p>ISBN</p>
+			<input id="isbn" placeholder="ex 000-0-00-0000000-0">
+		</div>
+	</div>
+	<br></br>
+	<div class="sbutton">
+		<button onclick="newRequest()" id="return">Search<button>
+	</div>
+</div>
 <div id="overlay">
     <div class="container" id="book">
         <div class="btn">
@@ -50,7 +69,7 @@ Search for a book:
         </div>
     </div>
 	<div class="no_book" id="noo_book">
-		The book <div id="title">Title</div> by <strong>Author</strong> or ISBN number <b>000-0-00-000000-0</b> 
+		The book <div id="no_title">Title</div> by <strong>Author</strong> or ISBN number <b>000-0-00-000000-0</b> 
 		could not be found.
 		<br></br>
 		Try another search
@@ -59,7 +78,7 @@ Search for a book:
 		<button id="return" onclick="off()">OK</button>
 	</div>
 </div>
-<button onclick="newRequest()">submit</button>
+
 
 
 <div id="bookDisplay">
