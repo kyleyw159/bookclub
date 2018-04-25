@@ -1,0 +1,140 @@
+
+body {
+	min-height: 100vh;  /* need this line to 
+					tell body to fill viewport */
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	color: blue;
+     }
+
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#overlay .container {
+	height: 100%;
+}
+
+#overlay .container .center {
+	padding: 30px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#overlay #book
+{
+	display:none;
+}
+
+#noo_book {
+	display: none;
+	
+}
+#overlay .no_book {
+	text-align: center;
+	color: white;
+	display: flex;
+	flex-direction:column;
+	height:100%;
+	align-items: center;
+	justify-content: center;
+}
+
+#overlay .container .keep {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#overlay .container .center .center-image {
+	background-color: #fff;
+	height: 350px;
+	width: 500px;
+	display: flex;
+	padding: 10px;
+}
+
+#leftbtn {
+	display: none;
+}
+#overlay .container .center .center-image .left {
+	width: 50%; 
+}
+
+#overlay .container .center .center-image .right{
+	width: 50%;
+}
+
+#overlay .container .center .center-image .right .title {
+	color: #000;
+	font-weight: 700;
+	font-size: 22px;
+	margin-top: 10px;
+}
+#overlay .container .center .center-image .right .author {
+	margin-top: 10px;
+}
+#overlay .container .center .center-image .right .description {
+	margin-top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#return {
+	background-color:#4A73FF;
+	color: white;
+	padding: 10px 34px;
+	border-radius: 12px;
+}
+
+header {
+       text-align: center;
+       padding: 10px;
+	  
+}
+
+h1 {
+   font-size: x-large;
+   font-weight: light;
+}
+#title
+{
+	font-weight: bold;
+	font-size: medium;
+	margin: 0px;
+}
+
+
+main {
+     flex: 1 0 auto;  /* the sticky footer trick without the footer */
+}
+
+
+input {
+	border-style: solid;
+	border-radius: 5px;
+	font-size: medium;
+}
+
+
+
+p {
+	font-size: medium;
+	margin: 10px;
+}
+
+
+

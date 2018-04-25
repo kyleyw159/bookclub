@@ -1,0 +1,79 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Make a Book List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" type="text/css" href="bookclub.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+</head>
+
+<body>
+
+<header>
+<h1>Book List</h1>
+</header>
+
+
+<main>
+Search for a book:
+<br>
+<input id="title" placeholder="title"> <input id="author" placeholder="author">
+<input id="isbn" placeholder="XXXXXXXXXX or XXX-XXXXXXXXXX"> 
+<div id="overlay">
+    <div class="container" id="book">
+        <div class="btn">
+            <button onclick="off()">X</button>
+        </div>
+        <div class="center">
+            <div class="left-arrow">
+                <button id="leftbtn">left</button>
+            </div>
+            <div class="center-image">
+                <div class="left" id="getImage">
+                    <img src="">
+                </div>
+                <div class="right">
+                    <div class="title" id="book-title"></div>
+                    <div class="author" id="book-author"></div>
+                    <div class="description" id="book-description"></div>
+                </div>
+            </div>
+            <div class="right-arrow">
+                <button id="rightbtn">right</button>
+            </div>
+          
+        </div>
+        <div class="keep" id="keep">
+			<button>Keep</button>
+        </div>
+    </div>
+	<div class="no_book" id="noo_book">
+		The book <div id="title">Title</div> by <strong>Author</strong> or ISBN number <b>000-0-00-000000-0</b> 
+		could not be found.
+		<br></br>
+		Try another search
+		<br></br>
+
+		<button id="return" onclick="off()">OK</button>
+	</div>
+</div>
+<button onclick="newRequest()">submit</button>
+
+
+<div id="bookDisplay">
+    <div class="container">
+    </div>
+</div>
+
+</main>
+
+<!-- The Javascript for this page -->
+<script src="bookclub.js"></script>
+
+<!-- The JSONp request -->
+<script id="dummy"></script>  
+
+</body>
+</html>
