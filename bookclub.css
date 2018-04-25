@@ -98,7 +98,9 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-
+#bookDisplay {
+	height:50.0vw;
+}
 #overlay #book
 {
 	display:none;
@@ -192,7 +194,7 @@ h2 {
    font-weight: lighter;
    text-align: left;
    color: black;
-   padding-left: 50px;
+   padding-left: 100px;
 }
 #no_title
 {
