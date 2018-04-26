@@ -29,8 +29,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	align-items:left;
-	justify-content:left;
+	
 }
 #landing .sbutton {
 	width: 100%;
@@ -53,7 +52,7 @@ body {
 	padding-top:8px;
 	padding-bottom:8px;
 }
-#search_container
+.search_container
 {
 	display:flex;
 	flex-direction:column;
@@ -182,6 +181,13 @@ body {
 	border-radius: 12px;
 }
 
+#OK {
+	background-color:#4A73FF;
+	color: white;
+	padding: 10px 34px;
+	border-radius: 12px;
+}
+
 header {
        text-align: center;
        padding: 10px;
@@ -190,7 +196,7 @@ header {
 
 h1 {
    font-size: 34px;
-   font-weight: light;
+   font-weight: bold;
    text-align: left;
    color: #4A73FF;
    margin:0px;
@@ -300,6 +306,19 @@ p {
 	}
 	#book-description {
 		overflow-y: auto;
+	}
+	#bookDisplay .new-tile-row .new-tile .center-image {
+		width: 100%;
+		padding:0px;
+		margin: 10px;
+	}
+	#bookDisplay .new-tile-row .new-tile {
+		width: 90%;
+	}
+	#bookDisplay .new-tile-row
+	{
+		flex-direction:column;
+		width: 100%;
 	}
 	
 }

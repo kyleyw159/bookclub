@@ -1,5 +1,5 @@
 <!doctype HTML>
-<html>
+<HTML lang = "fr">
 <head>
 <title>Make a Book List</title>
 <meta charset="UTF-8">
@@ -20,22 +20,22 @@
 	
 	<div id="search">
         <h1 id="home-head">BOOK CLUB</h1>
-		<div id="search_container">
+		<div class="search_container">
 			<p>Author</p>
 			<input id="title" placeholder="ex William Shakespeare"> 
 		</div>
 		<b>or</b>
-		<div id="search_container">
+		<div class="search_container">
 			<p>Title</p>
 			<input id="author" placeholder="ex Romeo and Juliet"> 
 		</div>
 			<b>or</b>
-		<div id="search_container">
+		<div class="search_container">
 			<p>ISBN</p>
 			<input id="isbn" placeholder="ex 000-0-00-0000000-0">
 		</div>
 	</div>
-	<br></br>
+	<br>
 	<div class="sbutton">
 		<button onclick="newRequest()" id="return">Search</button>
 	</div>
@@ -51,7 +51,7 @@
             </div>
             <div class="center-image">
                 <div class="left" id="getImage">
-                    <img src="">
+                    <img src="https://www.googleapis.com/books/v1/volumes?q=harry+potter&callback=handleResponse" alt="Book">
                 </div>
                 <div class="right">
                     <div class="title" id="book-title"></div>
@@ -71,11 +71,11 @@
 	<div class="no_book" id="noo_book">
 		The book <div id="no_title">Title</div> by <strong>Author</strong> or ISBN number <b>000-0-00-000000-0</b> 
 		could not be found.
-		<br></br>
+		<br>
 		Try another search
-		<br></br>
+		<br>
 
-		<button id="return" onclick="off()">OK</button>
+		<button id="OK" onclick="off()">OK</button>
 	</div>
 </div>
 
