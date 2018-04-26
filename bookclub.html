@@ -4,22 +4,22 @@
 <title>Make a Book List</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" type="text/css" href="reset.css">
 <link rel="stylesheet" type="text/css" href="bookclub.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
 </head>
 
 <body>
-<h1>BOOK CLUB</h1>
+<h1 id="h" >BOOK CLUB</h1>
 
 
 
 <main>
 
 <div id="landing">
-	<h2>Search for a book by....</h2>
+	<h2 id="search-text">Search for a book by...</h2>
 	
 	<div id="search">
+        <h1 id="home-head">BOOK CLUB</h1>
 		<div id="search_container">
 			<p>Author</p>
 			<input id="title" placeholder="ex William Shakespeare"> 
@@ -47,7 +47,7 @@
         </div>
         <div class="center">
             <div class="left-arrow">
-                <button id="leftbtn">left</button>
+                <p><button id="leftbtn">left</button></p>
             </div>
             <div class="center-image">
                 <div class="left" id="getImage">
@@ -60,11 +60,11 @@
                 </div>
             </div>
             <div class="right-arrow">
-                <button id="rightbtn">right</button>
+                <p><button id="rightbtn">right</button></p>
             </div>
           
         </div>
-        <div class="keep" id="keep">
+        <div class="keep" id="keep" onclick="keep()">
 			<button>Keep</button>
         </div>
     </div>
@@ -82,7 +82,11 @@
 
 
 <div id="bookDisplay">
-    <div class="container">
+    <div class="new-tile-row">
+    </div>
+    <div class="new-tile-row">
+    </div>
+    <div class="new-tile-row">
     </div>
 </div>
 
